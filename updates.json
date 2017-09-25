@@ -1,0 +1,14 @@
+{
+	"addons": {
+		"phantoml0rd_tv@rawgit.com": {
+			"updates": [
+				{ "version": "1.0.0",
+				"update_link": "https://cdn.rawgit.com/ansien12/PLTV-Extension/5c71307a/updates/phantoml0rd_tv-1.0.0-an%2Bfx.xpi" },
+                { "version": "1.0.1",
+				"update_link": "https://cdn.rawgit.com/ansien12/PLTV-Extension/690538ab/updates/phantoml0rd_tv-1.0.1-an%2Bfx.xpi" },
+				{ "version": "1.0.2",
+				"update_link": "https://cdn.rawgit.com/ansien12/PLTV-Extension/2698a169/updates/phantoml0rd_tv-1.0.2-an%2Bfx.xpi" }
+			]
+		}
+	}
+}
