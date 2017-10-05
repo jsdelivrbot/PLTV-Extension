@@ -1,6 +1,6 @@
 {
     "name": "PhantomL0rd TV",
-    "version": "1.0.7",
+    "version": "1.0.8",
 	"short_name": "PLTV",
     "description": "The official PhantomL0rd browser extension, includes all Twitch emotes and showing notifications when PhantomL0rd goes live.",
     "icons": {

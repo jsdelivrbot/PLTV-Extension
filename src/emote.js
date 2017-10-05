@@ -224,9 +224,9 @@ export default class Emote
      * @static
      */
     static loadTwitchEmotes()
-    {
+	{
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://twitchemotes.com/api_cache/v2/global.json');
+        xhr.open('GET', 'https://twitchemotes.com/api_cache/v3/global.json');
         xhr.send();
         xhr.timeout = 5000;
         const urlTemplate = 'https://static-cdn.jtvnw.net/emoticons/v1/';
@@ -247,12 +247,11 @@ export default class Emote
                 return;
             }
 
-            const emoteDic = JSON.parse(xhr.responseText)['emotes'];
+            const emoteDic = JSON.parse(xhr.responseText);
 
             for (const emote in emoteDic) {
-
                 Emote.emotes[emote] = {
-                    url: urlTemplate + emoteDic[emote]['image_id'] + '/' + '1.0'
+                    url: urlTemplate + emoteDic[emote]['id'] + '/' + '1.0'
                 };
             }
         }
@@ -265,7 +264,7 @@ export default class Emote
     static loadSubEmotes()
     {
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://twitchemotes.com/api_cache/v2/subscriber.json');
+        xhr.open('GET', 'https://twitchemotes.com/api_cache/v3/subscriber.json');
         xhr.send();
         xhr.timeout = 5000;
         const urlTemplate = 'https://static-cdn.jtvnw.net/emoticons/v1/';
@@ -286,18 +285,18 @@ export default class Emote
                 return;
             }
 
-            const emoteDic = JSON.parse(xhr.responseText)['channels'];
+            const emoteDic = JSON.parse(xhr.responseText);
 
             for (const channel in emoteDic) {
-
+			
                 for (const i in emoteDic[channel]['emotes']) {
 
                     const dict = emoteDic[channel]['emotes'][i];
                     const code = dict['code'];
-
+				
                     if (Emote.isValidEmote(code)) {
                         Emote.emotes[code] = {
-                            url: urlTemplate + dict['image_id'] + '/' + '1.0'
+                            url: urlTemplate + dict['id'] + '/' + '1.0'
                         };
                     }
                 }
