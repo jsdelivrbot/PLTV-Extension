@@ -9,7 +9,9 @@
 				{ "version": "1.0.2",
 				"update_link": "https://cdn.rawgit.com/ansien12/PLTV-Extension/2698a169/updates/phantoml0rd_tv-1.0.2-an%2Bfx.xpi" },
                 { "version": "1.0.7",
-				"update_link": "https://cdn.rawgit.com/ansien12/PLTV-Extension/b650e75a/updates/phantoml0rd_tv-1.0.7-an%2Bfx.xpi" }
+				"update_link": "https://cdn.rawgit.com/ansien12/PLTV-Extension/b650e75a/updates/phantoml0rd_tv-1.0.7-an%2Bfx.xpi" },
+                { "version": "1.0.8",
+				"update_link": "https://cdn.rawgit.com/ansien12/PLTV-Extension/5c89563d/updates/phantoml0rd_tv-1.0.8-an%2Bfx.xpi" }
 			]
 		}
 	}
